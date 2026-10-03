@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zff-4V-4JS">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
@@ -22,30 +22,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ak-po-AQy">
-                                <rect key="frame" x="25" y="123" width="66" height="21"/>
-                                <fontDescription key="fontDescription" name="MatchaWorld" family="Matcha World" pointSize="20"/>
+                                <rect key="frame" x="25" y="177" width="66" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to protect your privacy and enjoy unrestricted access wherever you are." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgG-ka-2QM">
-                                <rect key="frame" x="25" y="148" width="348" height="57"/>
-                                <fontDescription key="fontDescription" name="MatchaWorld" family="Matcha World" pointSize="18"/>
+                                <rect key="frame" x="25" y="202" width="348" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice to see you again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGC-zx-bms">
-                                <rect key="frame" x="25.000000000000014" y="225" width="225.33333333333337" height="18"/>
-                                <fontDescription key="fontDescription" name="MatchaWorld" family="Matcha World" pointSize="17"/>
+                                <rect key="frame" x="87.666666666666671" y="265" width="162.66666666666663" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M1r-7u-azD">
-                                <rect key="frame" x="25" y="269" width="343" height="34"/>
+                                <rect key="frame" x="25" y="311.33333333333331" width="343" height="34"/>
                                 <fontDescription key="fontDescription" name="MatchaWorld" family="Matcha World" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="b6m-0d-2Ja" customClass="CustomizedButton" customModule="loginpage" customModuleProvider="target">
-                                <rect key="frame" x="171.66666666666666" y="323" width="50" height="50"/>
+                                <rect key="frame" x="171.66666666666666" y="365.33333333333331" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.03999690164969693" green="0.093384128991684981" blue="0.17755859375000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cNi-iI-RY5"/>
@@ -56,9 +56,12 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="LoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P1G-ua-owg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2L-IK-qVm">
-                                <rect key="frame" x="25" y="403" width="343" height="50"/>
+                                <rect key="frame" x="25" y="445.33333333333331" width="343" height="50"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="VLA-e8-cCA"/>
@@ -68,7 +71,7 @@
                                 <state key="normal" title="Sign in with Google" image="google"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehS-c3-q4j">
-                                <rect key="frame" x="25" y="463" width="343" height="50"/>
+                                <rect key="frame" x="25" y="505.33333333333326" width="343" height="50"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="eRf-lA-J0z"/>
@@ -78,7 +81,7 @@
                                 <state key="normal" title="Sign in with Apple" image="apple.logo" catalog="system"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuX-X6-fk5">
-                                <rect key="frame" x="21.666666666666657" y="392" width="350" height="1"/>
+                                <rect key="frame" x="21.666666666666657" y="434.33333333333331" width="350" height="1"/>
                                 <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="YkF-46-XX5"/>
@@ -119,15 +122,65 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M1r-7u-azD" secondAttribute="trailing" constant="25" id="yti-K4-bET"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kqD-lv-yaJ"/>
                     <connections>
+                        <outlet property="emailField" destination="M1r-7u-azD" id="hFP-bD-lGN"/>
                         <outlet property="loginButton" destination="b6m-0d-2Ja" id="DOz-Lc-DOl"/>
+                        <segue destination="byR-ds-dAc" kind="show" identifier="login" id="xFy-Vk-oBq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-202.29007633587784" y="95.774647887323951"/>
+            <point key="canvasLocation" x="1651.1450381679388" y="95.774647887323951"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NMW-ZF-IrO">
+            <objects>
+                <viewController id="byR-ds-dAc" customClass="OTPViewController" customModule="loginpage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FvC-gb-7jV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0y-3x-0Fi">
+                                <rect key="frame" x="51" y="154" width="342" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PBt-99-UCL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="naD-3T-gMs"/>
+                    <connections>
+                        <outlet property="emailTitle" destination="i0y-3x-0Fi" id="OP1-Jn-3j4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVd-kv-SSc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2475.5725190839694" y="100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bpe-9k-unN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zff-4V-4JS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d0v-3t-jbh">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HEL-BN-N97"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFf-QH-ogs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724.4274809160305" y="95.774647887323951"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.03999690165" green="0.093384128989999995" blue="0.1775585938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="apple.logo" catalog="system" width="105" height="128"/>
         <image name="google" width="20" height="20"/>

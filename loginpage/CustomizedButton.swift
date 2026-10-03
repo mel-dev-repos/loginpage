@@ -11,9 +11,10 @@ import UIKit
 class CustomizedButton:UIButton {
     
     func setUpStyle(){
-      backgroundColor = .systemYellow
+        backgroundColor = .custom
         titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
-        widthAnchor.constraint(equalToConstant: 200).isActive = true
+        layer.cornerRadius = 12
+        widthAnchor.constraint(equalToConstant:370).isActive = true
 
     }
    
