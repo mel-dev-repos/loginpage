@@ -11,15 +11,21 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var loginButton: CustomizedButton!
 
+    @IBAction func fieldBeginTyping(_ sender: UITextField) {
+        let text = sender.text ?? ""
+        loginButton.isEnabled = !text.isEmpty
+    }
+  
     @IBOutlet weak var emailField: UITextField!
-     var otpView = OTPViewController ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.setUpStyle()
+        loginButton.isEnabled = false
         
     }
     
+
 
     @IBAction func LoginPressed(_ sender: Any) {
         if let emailText = emailField.text,  !emailText.isEmpty {
